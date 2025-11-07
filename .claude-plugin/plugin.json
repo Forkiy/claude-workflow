@@ -1,0 +1,22 @@
+{
+  "name": "arch-toolkit",
+  "version": "0.1.0",
+  "description": "Comprehensive software architecture and development toolkit with specialized agents for DDD, C4, TDD, and clean architecture",
+  "author": {
+    "name": "Igor Kopanev",
+    "email": "kopanevigor@gmail.com"
+  },
+  "repository": "https://github.com/Forkiy/claude-workflow",
+  "license": "MIT",
+  "keywords": [
+    "architecture",
+    "ddd",
+    "c4",
+    "clean-architecture",
+    "tdd",
+    "software-design",
+    "prd",
+    "pipeline"
+  ],
+  "commands": "./commands"
+}

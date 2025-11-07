@@ -1,0 +1,28 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claude-workflow",
+  "version": "0.1.0",
+  "description": "Professional software architecture and development tools with DDD, C4, TDD, and clean architecture expertise",
+  "owner": {
+    "name": "Igor Kopanev",
+    "email": "kopanevigor@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "arch-toolkit",
+      "description": "Comprehensive toolkit with specialized agents (Bob Martin, Kent Beck, Jeff Patton) for architecture, DDD, C4, TDD, and PRD creation. Includes full pipeline from idea to implementation.",
+      "version": "0.1.0",
+      "source": "./",
+      "category": "architecture",
+      "keywords": [
+        "architecture",
+        "ddd",
+        "c4",
+        "tdd",
+        "clean-code",
+        "prd",
+        "pipeline"
+      ]
+    }
+  ]
+}
