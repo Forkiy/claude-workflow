@@ -93,30 +93,30 @@ Expected formats:
 # Check if PRD exists
 if [[ ! -f "01-requirements/prd.md" ]]; then
   # Execute PRD creation
-  /create-prd "$PROJECT_IDEA" "01-requirements/prd.md"
+  /arch-toolkit:prd:create "$PROJECT_IDEA" "01-requirements/prd.md"
 fi
 ```
 
 ### Stage 2: Domain Modeling
 ```bash
 # Use PRD as input
-/create-domain-model "01-requirements/prd.md" "02-domain/domain-model.md"
+/arch-toolkit:ddd:create-model "01-requirements/prd.md" "02-domain/domain-model.md"
 ```
 
 ### Stage 3: C4 Architecture
 ```bash
-/create-c4-model "01-requirements/prd.md" "02-domain/domain-model.md" "03-architecture/"
+/arch-toolkit:c4:create-model "01-requirements/prd.md" "02-domain/domain-model.md" "03-architecture/"
 ```
 
 ### Stage 4: Design Document
 ```bash
 # Gather implementation details if needed
-/create-design-doc "01-requirements:02-domain:03-architecture" "$IMPLEMENTATION_DETAILS" "04-design/design-doc.md"
+/arch-toolkit:arch:create-design-document "01-requirements:02-domain:03-architecture" "$IMPLEMENTATION_DETAILS" "04-design/design-doc.md"
 ```
 
 ### Stage 5: Roadmap Creation
 ```bash
-/create-roadmap "04-design/design-doc.md" "05-roadmap/roadmap.md"
+/arch-toolkit:pm:roadmap "04-design/design-doc.md" "05-roadmap/roadmap.md"
 ```
 
 ### Stage 6: Implementation
@@ -124,7 +124,7 @@ fi
 # Read roadmap and identify first epic
 # Show user the priorities
 # Ask which to implement first
-/new-feature "$SELECTED_EPIC"
+/arch-toolkit:dev:implement-feature "$SELECTED_EPIC"
 ```
 
 ## Interactive Checkpoints

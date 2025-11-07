@@ -19,7 +19,7 @@ Squash all changes in the current branch and merge into main/master with a compr
       !`git diff main...HEAD --stat`
 
 2. If there are uncommitted changes:
-   - Stage and commit them using `/commit` command
+   - Stage and commit them using `/arch-toolkit:git:commit` command
 
 3. Determine the base branch (main or master):
    - Main ref: !`git show-ref --verify --quiet refs/heads/main`

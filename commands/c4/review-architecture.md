@@ -7,12 +7,12 @@ description: Review architecture documentation and C4 diagrams for clarity and b
 Review existing architecture documentation and C4 diagrams using the c4-architecture-advisor agent to evaluate clarity, completeness, and alignment with best practices.
 
 ## Usage
-`/c4.review-architecture <architecture-doc-path> [output-path]`
+`/arch-toolkit:c4:review-architecture <architecture-doc-path> [output-path]`
 
 Examples:
-- `/c4.review-architecture c4-architecture.md`
-- `/c4.review-architecture docs/architecture.md review-results.md`
-- `/c4.review-architecture ./system/c4-model.md ./reviews/architecture-review.md`
+- `/arch-toolkit:c4:review-architecture c4-architecture.md`
+- `/arch-toolkit:c4:review-architecture docs/architecture.md review-results.md`
+- `/arch-toolkit:c4:review-architecture ./system/c4-model.md ./reviews/architecture-review.md`
 
 ## Process
 

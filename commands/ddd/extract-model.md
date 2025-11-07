@@ -7,12 +7,12 @@ description: Extract and refine domain model from existing codebase
 Extract the implicit domain model from an existing codebase and create a refined DDD-aligned version using the ddd-architect agent.
 
 ## Usage
-`/ddd.extract-model [codebase-path] [output-path]`
+`/arch-toolkit:ddd:extract-model [codebase-path] [output-path]`
 
 Examples:
-- `/ddd.extract-model` (analyzes current directory)
-- `/ddd.extract-model ./src extracted-domain.md`
-- `/ddd.extract-model /path/to/project ./models/extracted-domain.md`
+- `/arch-toolkit:ddd:extract-model` (analyzes current directory)
+- `/arch-toolkit:ddd:extract-model ./src extracted-domain.md`
+- `/arch-toolkit:ddd:extract-model /path/to/project ./models/extracted-domain.md`
 
 ## Process
 

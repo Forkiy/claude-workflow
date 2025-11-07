@@ -7,12 +7,12 @@ description: Create lean C4 architecture model optimized for agent consumption (
 Create a lean, focused C4 architecture model from PRD and Domain Model using the c4-architecture-advisor agent. This command generates concise C4 diagrams and documentation optimized for technical implementation and downstream agent processing.
 
 ## Usage
-`/c4.create-lean <prd-path> <domain-model-path> [output-path]`
+`/arch-toolkit:c4:create-lean <prd-path> <domain-model-path> [output-path]`
 
 Examples:
-- `/c4.create-lean lean-prd.md lean-domain-model.md`
-- `/c4.create-lean docs/prd.md models/domain.md lean-c4-architecture.md`
-- `/c4.create-lean ./prd.md ./domain.md ./architecture/lean-c4.md`
+- `/arch-toolkit:c4:create-lean lean-prd.md lean-domain-model.md`
+- `/arch-toolkit:c4:create-lean docs/prd.md models/domain.md lean-c4-architecture.md`
+- `/arch-toolkit:c4:create-lean ./prd.md ./domain.md ./architecture/lean-c4.md`
 
 ## Process
 

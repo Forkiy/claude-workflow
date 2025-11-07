@@ -75,61 +75,61 @@ Each stage builds on the previous with two variants:
 ### Development Workflow
 ```bash
 # Start new feature with TDD implementation
-/dev:implement-tdd <design-doc.md> [output-dir]
+/arch-toolkit:dev.implement-tdd <design-doc.md> [output-dir]
 
 # Fix a bug (enforces test-first approach)
-/dev:fix-bug <bug-description>
+/arch-toolkit:dev.fix-bug <bug-description>
 
 # Refactor with TDD safety net
-/dev:refactor-tdd <file-or-directory>
+/arch-toolkit:dev.refactor-tdd <file-or-directory>
 ```
 
 ### Pipeline Commands
 ```bash
 # Execute full pipeline from idea to implementation
-/pipeline:lean "Build a task management API"
+/arch-toolkit:pipeline.lean "Build a task management API"
 
 # Run specific pipeline stages
-/pipeline:run <stage> <input-files>
+/arch-toolkit:pipeline.run <stage> <input-files>
 ```
 
 ### Architecture Commands
 ```bash
 # Comprehensive architecture review with Bob Martin
-/arch:review [directory]
+/arch-toolkit:arch.review [directory]
 
 # Audit codebase with metrics
-/arch:audit
+/arch-toolkit:arch.audit
 
 # Verify implementation matches design
-/arch:verify-implementation <design-doc> <implementation-dir>
+/arch-toolkit:arch.verify-implementation <design-doc> <implementation-dir>
 
 # Evaluate architectural changes
-/arch:evaluate-idea "Split payment service into microservice"
+/arch-toolkit:arch.evaluate-idea "Split payment service into microservice"
 ```
 
 ### Git Operations
 ```bash
 # Create semantic commits
-/git:commit [prefix]
+/arch-toolkit:git.commit [prefix]
 
 # Squash and merge to main
-/git:merge
+/arch-toolkit:git.merge
 ```
 
 ### Product & Design Commands
 ```bash
 # Create lean PRD (AI-optimized)
-/prd:create-lean <project-idea> [output]
+/arch-toolkit:prd.create-lean <project-idea> [output]
 
 # Create domain model from PRD
-/ddd:create-model <prd-file> [output]
+/arch-toolkit:ddd.create-model <prd-file> [output]
 
 # Create C4 architecture diagrams
-/c4:create-lean <prd> <domain-model> [output]
+/arch-toolkit:c4.create-lean <prd> <domain-model> [output]
 
 # Decompose into epics
-/pm:decompose-epics <design-doc> [output]
+/arch-toolkit:pm.decompose-epics <design-doc> [output]
 ```
 
 ## Key Patterns & Conventions
@@ -171,10 +171,10 @@ Agents follow strict constraints:
 ## Testing & Validation
 
 While there are no automated tests in this repository (it's a command/agent plugin), the architecture enforces quality through:
-- TDD-first development commands (`/dev:implement-tdd`, `/dev:fix-bug`)
-- Design verification (`/arch:verify-implementation`)
-- Epic validation (`/pm:validate-epics`)
-- Architecture reviews (`/arch:review`, `/arch:audit`)
+- TDD-first development commands (`/arch-toolkit:dev.implement-tdd`, `/arch-toolkit:dev.fix-bug`)
+- Design verification (`/arch-toolkit:arch.verify-implementation`)
+- Epic validation (`/arch-toolkit:pm.validate-epics`)
+- Architecture reviews (`/arch-toolkit:arch.review`, `/arch-toolkit:arch.audit`)
 
 ## Local Development
 

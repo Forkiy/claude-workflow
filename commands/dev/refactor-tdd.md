@@ -166,13 +166,13 @@ Works well with:
 For complex refactoring across multiple modules:
 ```bash
 # Refactor an entire subsystem
-/refactor-tdd ./src/auth "Implement clean architecture with ports and adapters"
+/arch-toolkit:dev:refactor-tdd ./src/auth "Implement clean architecture with ports and adapters"
 
 # Prepare for new features
-/refactor-tdd ./src/payment "Extract interfaces for payment provider abstraction"
+/arch-toolkit:dev:refactor-tdd ./src/payment "Extract interfaces for payment provider abstraction"
 
 # Improve testability
-/refactor-tdd ./src/services "Remove tight coupling and add dependency injection"
+/arch-toolkit:dev:refactor-tdd ./src/services "Remove tight coupling and add dependency injection"
 ```
 
 ## Key Benefits

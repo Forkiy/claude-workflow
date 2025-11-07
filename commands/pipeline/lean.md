@@ -7,11 +7,11 @@ description: Execute lean document pipeline from idea to implementation-ready de
 Execute the complete lean documentation pipeline from a project idea to implementation-ready design documents. This creates a full set of concise, AI-agent-optimized documents perfect for rapid development.
 
 ## Usage
-`/pipeline.lean "<project idea>" [output-folder]`
+`/arch-toolkit:pipeline:lean "<project idea>" [output-folder]`
 
 Examples:
-- `/pipeline.lean "A mobile app for tracking personal carbon footprint"`
-- `/pipeline.lean "Developer productivity dashboard" ./docs/lean-pipeline`
+- `/arch-toolkit:pipeline:lean "A mobile app for tracking personal carbon footprint"`
+- `/arch-toolkit:pipeline:lean "Developer productivity dashboard" ./docs/lean-pipeline`
 
 ## Pipeline Stages
 
@@ -35,28 +35,28 @@ Total output: ~15 pages of focused, actionable documentation
    ```bash
    echo "📝 Stage 1/4: Generating Lean PRD..."
    ```
-   - Invoke `/prd.create-lean "$PROJECT_IDEA" $OUTPUT_FOLDER/1-lean-prd.md`
+   - Invoke `/arch-toolkit:prd.create-lean "$PROJECT_IDEA" $OUTPUT_FOLDER/1-lean-prd.md`
    - Verify successful creation before proceeding
 
 3. **Stage 2: Generate Lean Domain Model**
    ```bash
    echo "🏗️ Stage 2/4: Generating Lean Domain Model..."
    ```
-   - Invoke `/ddd.create-lean $OUTPUT_FOLDER/1-lean-prd.md $OUTPUT_FOLDER/2-lean-domain-model.md`
+   - Invoke `/arch-toolkit:ddd.create-lean $OUTPUT_FOLDER/1-lean-prd.md $OUTPUT_FOLDER/2-lean-domain-model.md`
    - Verify successful creation before proceeding
 
 4. **Stage 3: Generate Lean C4 Architecture**
    ```bash
    echo "🏛️ Stage 3/4: Generating Lean C4 Architecture..."
    ```
-   - Invoke `/c4.create-lean $OUTPUT_FOLDER/1-lean-prd.md $OUTPUT_FOLDER/2-lean-domain-model.md $OUTPUT_FOLDER/3-lean-c4-architecture.md`
+   - Invoke `/arch-toolkit:c4.create-lean $OUTPUT_FOLDER/1-lean-prd.md $OUTPUT_FOLDER/2-lean-domain-model.md $OUTPUT_FOLDER/3-lean-c4-architecture.md`
    - Verify successful creation before proceeding
 
 5. **Stage 4: Generate Lean Design Document**
    ```bash
    echo "📐 Stage 4/4: Generating Lean Design Document..."
    ```
-   - Invoke `/arch.create-design-lean $OUTPUT_FOLDER/1-lean-prd.md $OUTPUT_FOLDER/2-lean-domain-model.md $OUTPUT_FOLDER/3-lean-c4-architecture.md $OUTPUT_FOLDER/4-lean-design-document.md`
+   - Invoke `/arch-toolkit:arch.create-design-lean $OUTPUT_FOLDER/1-lean-prd.md $OUTPUT_FOLDER/2-lean-domain-model.md $OUTPUT_FOLDER/3-lean-c4-architecture.md $OUTPUT_FOLDER/4-lean-design-document.md`
    - Verify successful creation
 
 6. **Create Pipeline Summary**
@@ -84,8 +84,8 @@ Total output: ~15 pages of focused, actionable documentation
    ## Next Steps
 
    With these documents, you can:
-   1. Start implementation with `/dev.implement-feature 4-lean-design-document.md`
-   2. Generate epics with `/pm.decompose-epics 4-lean-design-document.md`
+   1. Start implementation with `/arch-toolkit:dev.implement-feature 4-lean-design-document.md`
+   2. Generate epics with `/arch-toolkit:pm.decompose-epics 4-lean-design-document.md`
    3. Create detailed versions if needed with standard commands
    4. Share with team for rapid alignment
 

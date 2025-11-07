@@ -7,12 +7,12 @@ description: Create a Domain Model from a PRD using Domain-Driven Design princip
 Create a comprehensive Domain Model from a Product Requirements Document (PRD) using the ddd-architect agent and Domain-Driven Design principles.
 
 ## Usage
-`/ddd.create-model <prd-file-path> [output-path]`
+`/arch-toolkit:ddd:create-model <prd-file-path> [output-path]`
 
 Examples:
-- `/ddd.create-model carbon-tracker-prd.md`
-- `/ddd.create-model docs/prd.md domain-model.md`
-- `/ddd.create-model ./requirements/product-spec.md ./models/domain.md`
+- `/arch-toolkit:ddd:create-model carbon-tracker-prd.md`
+- `/arch-toolkit:ddd:create-model docs/prd.md domain-model.md`
+- `/arch-toolkit:ddd:create-model ./requirements/product-spec.md ./models/domain.md`
 
 ## Process
 

@@ -7,12 +7,12 @@ description: Review an existing domain model for DDD alignment and best practice
 Perform a comprehensive review of an existing domain model document using the ddd-architect agent to evaluate its alignment with Domain-Driven Design principles.
 
 ## Usage
-`/ddd.review-model <domain-model-path> [output-path]`
+`/arch-toolkit:ddd.review-model <domain-model-path> [output-path]`
 
 Examples:
-- `/ddd.review-model domain-model.md`
-- `/ddd.review-model models/payment-domain.md review-results.md`
-- `/ddd.review-model ./architecture/domain.md ./reviews/domain-review.md`
+- `/arch-toolkit:ddd.review-model domain-model.md`
+- `/arch-toolkit:ddd.review-model models/payment-domain.md review-results.md`
+- `/arch-toolkit:ddd.review-model ./architecture/domain.md ./reviews/domain-review.md`
 
 ## Process
 

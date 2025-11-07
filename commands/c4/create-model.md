@@ -7,12 +7,12 @@ description: Create C4 architecture model diagrams from PRD and Domain Model doc
 Create comprehensive C4 architecture model diagrams and documentation from Product Requirements Document (PRD) and Domain Model using the c4-architecture-advisor agent.
 
 ## Usage
-`/c4.create-model <prd-path> <domain-model-path> [output-path]`
+`/arch-toolkit:c4:create-model <prd-path> <domain-model-path> [output-path]`
 
 Examples:
-- `/c4.create-model prd.md domain-model.md`
-- `/c4.create-model docs/prd.md models/domain.md c4-architecture.md`
-- `/c4.create-model ./requirements/spec.md ./models/domain.md ./architecture/c4-model.md`
+- `/arch-toolkit:c4:create-model prd.md domain-model.md`
+- `/arch-toolkit:c4:create-model docs/prd.md models/domain.md c4-architecture.md`
+- `/arch-toolkit:c4:create-model ./requirements/spec.md ./models/domain.md ./architecture/c4-model.md`
 
 ## Process
 

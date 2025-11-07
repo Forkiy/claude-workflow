@@ -7,11 +7,11 @@ description: Create lean design document optimized for agent implementation (4-5
 Create a lean, implementation-focused Design Document from PRD, Domain Model, and C4 Architecture using the bob-martin-architect agent. This command generates a concise design document optimized for developers and AI agents to start implementation immediately.
 
 ## Usage
-`/arch.create-design-lean <prd-path> <domain-model-path> <c4-architecture-path> [output-path]`
+`/arch-toolkit:arch:create-design-lean <prd-path> <domain-model-path> <c4-architecture-path> [output-path]`
 
 Examples:
-- `/arch.create-design-lean lean-prd.md lean-domain-model.md lean-c4-architecture.md`
-- `/arch.create-design-lean docs/prd.md models/domain.md arch/c4.md lean-design.md`
+- `/arch-toolkit:arch:create-design-lean lean-prd.md lean-domain-model.md lean-c4-architecture.md`
+- `/arch-toolkit:arch:create-design-lean docs/prd.md models/domain.md arch/c4.md lean-design.md`
 
 ## Process
 

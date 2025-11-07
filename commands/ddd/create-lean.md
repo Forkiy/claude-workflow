@@ -7,12 +7,12 @@ description: Create a lean domain model optimized for agent consumption (2-3 pag
 Create a lean, focused Domain Model from a Product Requirements Document (PRD) using the ddd-architect agent. This command generates concise domain models optimized for technical implementation and downstream agent processing.
 
 ## Usage
-`/ddd.create-lean <prd-file-path> [output-path]`
+`/arch-toolkit:ddd:create-lean <prd-file-path> [output-path]`
 
 Examples:
-- `/ddd.create-lean lean-prd.md`
-- `/ddd.create-lean docs/prd.md lean-domain-model.md`
-- `/ddd.create-lean ./requirements/spec.md ./models/lean-domain.md`
+- `/arch-toolkit:ddd:create-lean lean-prd.md`
+- `/arch-toolkit:ddd:create-lean docs/prd.md lean-domain-model.md`
+- `/arch-toolkit:ddd:create-lean ./requirements/spec.md ./models/lean-domain.md`
 
 ## Process
 
